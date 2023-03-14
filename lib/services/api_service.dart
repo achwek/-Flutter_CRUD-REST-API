@@ -5,8 +5,7 @@ import 'package:flutterwithjsonserver/models/cases.dart';
 import 'package:http/http.dart';
 
 class ApiService {
-  //final Uri apiUrl = Uri.parse('http://192.168.0.7:3000/api');
-final Uri apiUrl = Uri.parse('http://192.168.1.184:3000/cases');
+final Uri apiUrl = Uri.parse('http://localhost:3000/cases');
  Future<List<Cases>> getCases() async {
   Response res = await get(apiUrl);
 
